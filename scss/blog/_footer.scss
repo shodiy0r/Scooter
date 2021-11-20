@@ -1,0 +1,108 @@
+.footer{
+    background-color: #333A44;
+    padding: 35px 0;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .footer__menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .logo__title{
+                margin-right: 58px;
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .menu__navbar{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .navbar-item{
+                    list-style: none;
+                    .navbar-item__link{
+                        text-decoration: none;
+                        margin-right: 32px;
+                        color: #939CAA;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 25px;
+                        &:hover{
+                            color: #FCB72B;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__only{
+            .icon{
+                width: 24px;
+                height: 24px;
+                fill: #FCB72B;
+                margin-right: 10px;
+                &:hover{
+                    fill: #fff;
+                }
+            }
+            .icon:nth-child(3){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// <<------------------------media zona----------------------------------->>
+
+@media only screen and (max-width: 450px) {
+    .footer{
+        background-color: #333A44;
+        padding: 35px 0;
+        .container{
+            flex-direction: column;
+            text-align: center;
+            .footer__menu{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .logo__title{
+                    margin-right: 0px;
+                    margin-bottom: 40px;
+                }
+                .menu__navbar{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    .navbar-item{
+                        margin-bottom: 16px;
+                        list-style: none;
+                        .navbar-item__link{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .footer__only{
+                .icon{
+                    width: 24px;
+                    height: 24px;
+                    fill: #FCB72B;
+                    margin: 10px;
+
+                    &:hover{
+                        fill: #fff;
+                    }
+                }
+                .icon:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
